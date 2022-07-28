@@ -4,14 +4,14 @@ You'll need to add your bearer token and the tweet id at the top of the main.js 
 
 install with
 
-`npm install`
+```npm install```
 
-run with
+Get replies with
 
-`node main.js`
+```npm run replies```
 
-uncomment/comment call of these two methods to fetch replies or retweets.
-`makeRepliesRequest()`
-`makeRetweetsRequest()`
+and retweets with
+
+```npm run retweets```
 
 As of writing this, retweets are limited to 100 and replies can only be fetched 7 days into the past.

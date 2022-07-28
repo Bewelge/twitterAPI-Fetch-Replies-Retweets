@@ -56,7 +56,7 @@ async function fetchRetweets() {
 		throw new Error("Unsuccessful request")
 	}
 }
-async function makeRepliesRequest() {
+module.exports.getReplies = async function () {
 	let allResponses = []
 	let doneRequest = false
 	let nextToken = null
@@ -100,7 +100,7 @@ function getTezAdressFromText(text) {
 	res = regex1.exec(text)
 	return res
 }
-async function makeRetweetsRequest() {
+module.exports.getRetweets = async function () {
 	try {
 		const response = await fetchRetweets()
 		console.dir(response, {
@@ -112,6 +112,3 @@ async function makeRetweetsRequest() {
 	}
 	process.exit()
 }
-
-makeRepliesRequest()
-// makeRetweetsRequest()
