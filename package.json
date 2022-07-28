@@ -1,0 +1,6 @@
+{
+	"name": "Fetch Retweets/Replies",
+	"dependencies": {
+		"needle": "^3.1.0"
+	}
+}
